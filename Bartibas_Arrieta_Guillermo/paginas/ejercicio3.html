@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="envio.php" method="get">
+        <fieldset>
+            <legend>Información reserva</legend>
+            <label for="nombre" id="nombre">Nombre</label>
+            <input name="nombre" type="text">
+            <br>
+            <label for="correo" id="correo">Correo</label>
+            <input name="correo" type="email">
+            <br>
+            <label for="reserva" id="reserva">Reserva</label>
+            <input name="reserva" type="date">
+        </fieldset>
+        <fieldset>
+            <legend>Información traje</legend>
+            <label>Talla</label>
+            <select id="talla">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Cuello</legend>
+                <input type="radio" id="corbata" value="corbata" name="corbata">
+                <label for="corbata" id="corbata">Corbata</label>
+                <br>
+                <input type="radio" id="pajarita" value="pajarita" name="pajarita">
+                <label for="pajarita" id="pajarita">Pajarita</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Otros</legend>
+                <input type="checkbox" id="chaleco" value="chaleco" name="chaleco">
+                <label for="chaleco" id="chaleco">Chaleco</label>
+                <br>
+                <input type="checkbox" id="pañuelo" value="pañuelo" name="pañuelo">
+                <label for="pañuelo" id="pañuelo">Pañuelo</label>
+                <br>
+                <input type="checkbox" id="gemelos" value="gemelos" name="gemelos">
+                <label for="gemelos" id="gemelos">Gemelos</label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Fecha</legend>
+            <label for="inicio" id="inicio">Inicio</label>
+            <input name="inicio" type="date">
+            <br>
+            <label for="fin" id="fin">Fin</label>
+            <input name="fin" type="date">
+        </fieldset>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
